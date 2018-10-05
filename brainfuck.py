@@ -1,7 +1,8 @@
 #!/bin/usr/python3.7
 # -*- coding:utf-8 -*-
 
-
+def help():
+	return [func for func in dir(Code) if callable(getattr(Code, func)) and not func.startswith("__")]
 
 class Code(object):
 	def __init__(self, tag):
@@ -12,7 +13,7 @@ class Code(object):
 		self.loop_count = 0
 
 	def __repr__(self):
-		return self.exec()
+		return self.__exec()
 
 	def modify(self, other):
 		print("old =", self.tag, self)
@@ -24,7 +25,7 @@ class Code(object):
 	def next_input(self, ascii_value):
 		self.inp = ascii_value
 
-	def exec(self):
+	def __exec(self):
 		output = ""
 		for x in range(len(self.tag)):
 			y = self.index[self.tag[x]]
@@ -71,7 +72,7 @@ class Code(object):
 						break
 
 				while self.list[self.indic] > 0 :
-					output+=self.exec()
+					output+=self.__exec()
 				self.tag = save_tag
 				x+=len_boucle
 		return output
