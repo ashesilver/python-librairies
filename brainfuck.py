@@ -71,7 +71,7 @@ class Code(object):
 						len_boucle = len(self.tag)
 						break
 
-				while self.list[self.indic] > 0 :
+				while self.list[self.indic] > 1 :
 					output+=self.__exec()
 				self.tag = save_tag
 				x+=len_boucle
