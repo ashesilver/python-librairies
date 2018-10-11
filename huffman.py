@@ -10,3 +10,8 @@ def ocuCount(st):
 			dico[x]=1
 
 	return(dico)
+
+dico = ocuCount(input())
+
+def makeATree(dico)
+
