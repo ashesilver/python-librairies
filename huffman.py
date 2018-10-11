@@ -1,5 +1,8 @@
 #!/bin/usr/python3.7
 
+
+
+
 def ocuCount(st):
 	dico = {}
 
@@ -11,7 +14,11 @@ def ocuCount(st):
 
 	return(dico)
 
-dico = ocuCount(input())
 
-def makeATree(dico)
+
+def makeATree(dico={'a':1,'b':2}):
+
+
+
+
 
