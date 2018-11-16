@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-def do(labonnebonnestring, liH=[]):
+def do(labonnebonnestring = "jhezdvf kaBGZEDFIUJ KAJBDF"):
+	liH=[]
+	labonnebonnestring += " "
 	while labonnebonnestring != "":
 		temp,x,i = "","",0
 		while x!=" ":
@@ -10,4 +12,3 @@ def do(labonnebonnestring, liH=[]):
 		liH.append(temp)
 		labonnebonnestring = labonnebonnestring[len(temp)+1:]
 	return liH
-

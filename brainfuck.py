@@ -1,7 +1,7 @@
 #!/bin/usr/python3.7
 # -*- coding:utf-8 -*-
 
-def help():
+def helper():
 	pass
 
 class Code(object):
