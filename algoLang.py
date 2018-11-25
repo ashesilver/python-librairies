@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/bin/usr/python3
 # -*- coding : utf-8 -*-
 
 
