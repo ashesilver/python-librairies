@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-def do(labonnebonnestring = "jhezdvf kaBGZEDFIUJ KAJBDF"):
+def do(spacingFlag =" "):
 	liH=[]
 	labonnebonnestring += " "
 	while labonnebonnestring != "":
 		temp,x,i = "","",0
-		while x!=" ":
+		while x!=spacingFlag:
 			temp += labonnebonnestring[i]
 			x = labonnebonnestring[i+1]
 			i+=1
